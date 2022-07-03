@@ -1,0 +1,21 @@
+<template>
+  <div
+    class="
+      bg-white
+      dark:bg-darkMode
+      mx-auto
+      2xl:px-36
+      xl:px-28
+      w-full
+      min-h-screen
+      font-Poppins
+      flex flex-col
+      gap-48
+      text-darkContent
+      dark:text-lightContent
+      pb-10
+    "
+  >
+    <slot></slot>
+  </div>
+</template>

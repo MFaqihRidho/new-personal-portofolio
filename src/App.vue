@@ -1,18 +1,29 @@
 <script setup>
 import Navbar from "./Components/Molecules/Navbar.vue";
 import MainLayout from "./Components/Layouts/MainLayout.vue";
-import Hero from "./Components/Molecules/Hero.vue";
+import Hero from "./Components/Organism/Hero.vue";
 import About from "./Components/Molecules/About.vue";
-import Skills from "./Components/Molecules/Skills.vue";
+import Skills from "./Components/Organism/Skills.vue";
+import Projects from "./Components/Organism/Projects.vue";
 </script>
 
 <template>
-  <div class="bg-lightMode dark:bg-darkMode flex items-center justify-center">
+  <div
+    class="
+      bg-lightMode
+      selection:bg-leftGradient
+      dark:bg-darkMode
+      flex
+      items-center
+      justify-center
+    "
+  >
     <MainLayout>
       <Navbar />
       <Hero />
       <About />
       <Skills />
+      <Projects />
     </MainLayout>
   </div>
 </template>

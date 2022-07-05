@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-      bg-white
+      bg-lightMode
       dark:bg-darkMode
       mx-auto
       2xl:px-36
@@ -12,7 +12,7 @@
       flex flex-col
       gap-48
       text-darkContent
-      dark:text-lightContent
+      dark:text-primaryDark
       pb-10
     "
   >

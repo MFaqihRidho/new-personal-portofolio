@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-6 gap-x-28 gap-y-16">
+  <div class="grid grid-cols-6 gap-x-28 gap-y-14">
     <img src="https://img.icons8.com/color/144/000000/html-5--v1.png" />
     <img src="https://img.icons8.com/color/144/000000/css3.png" />
     <img src="https://img.icons8.com/color/144/000000/javascript--v1.png" />

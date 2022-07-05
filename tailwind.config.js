@@ -15,7 +15,7 @@ module.exports = {
                 lightContent: "#A7A7A7",
                 darkContent: "#666666",
                 primary: "#42446E",
-                primaryDark: "#D9D9D9",
+                primaryDark: "#CCCCCC",
                 leftGradient: "#13B0F5",
                 rightGradient: "#E70FAA",
                 buttonText: "#018C0F",

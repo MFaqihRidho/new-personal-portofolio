@@ -8,20 +8,22 @@ defineProps({
 
 <template>
   <div
-    class="w-[385px] max-h-[567px] rounded-[20px] overflow-hidden shadow-cardShadow"
+    class="w-[385px] max-h-[550px] rounded-[20px] overflow-hidden shadow-cardShadow"
   >
     <div class="w-full h-[240px]">
       <slot name="image"></slot>
     </div>
     <div
-      class="bg-white dark:bg-[#363636] min-h-[310px] py-6 px-7 rounded-b-[20px] flex flex-col items-center gap-3"
+      class="bg-white dark:bg-[#363636] min-h-[310px] py-6 px-7 rounded-b-[20px] flex flex-col justify-between items-center gap-3"
     >
       <div class="flex flex-col justify-center items-start gap-4 text-left">
-        <h5 class="text-3xl text-black dark:text-primaryDark font-medium">
+        <h5
+          class="text-3xl truncate max-w-[17ch] text-black dark:text-primaryDark font-medium"
+        >
           {{ title }}
         </h5>
         <p
-          class="text-lg font-light text-darkContent dark:text-primaryDark leading-6 max-h-36 overflow-clip"
+          class="text-lg font-light text-darkContent dark:text-primaryDark leading-6 max-h-[11ch] overflow-clip"
         >
           {{ desc }}
         </p>

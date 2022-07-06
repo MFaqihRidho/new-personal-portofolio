@@ -2,51 +2,76 @@
 defineProps({
   title: String,
   desc: String,
+  stack: String,
 });
 </script>
 
 <template>
-  <div class="w-[375px] max-h-[567px]">
-    <div class="w-full h-[200px] rounded-t-[20px] overflow-hidden">
+  <div
+    class="w-[385px] max-h-[567px] rounded-[20px] overflow-hidden shadow-cardShadow"
+  >
+    <div class="w-full h-[240px]">
       <slot name="image"></slot>
     </div>
     <div
-      class="
-        bg-white
-        dark:bg-[#363636]
-        min-h-[310px]
-        py-6
-        px-7
-        rounded-b-[20px]
-        flex flex-col
-        items-center
-        gap-3
-      "
+      class="bg-white dark:bg-[#363636] min-h-[310px] py-6 px-7 rounded-b-[20px] flex flex-col items-center gap-3"
     >
-      <div class="flex flex-col justify-center items-center gap-4 text-left">
+      <div class="flex flex-col justify-center items-start gap-4 text-left">
         <h5 class="text-3xl text-black dark:text-primaryDark font-medium">
           {{ title }}
         </h5>
         <p
-          class="
-            text-lg
-            font-light
-            text-primaryDark
-            leading-6
-            max-h-36
-            overflow-clip
-          "
+          class="text-lg font-light text-darkContent dark:text-primaryDark leading-6 max-h-36 overflow-clip"
         >
           {{ desc }}
         </p>
       </div>
-      <div class="self-start">
-        <p class="text-[16px]">
-          Tech Stack : <span class="text-sm font-light">Vue</span>
+      <div class="self-start flex flex-col w-full gap-5">
+        <p class="text-[16px] text-primary dark:text-primaryDark">
+          Tech Stack :
+          <span class="text-sm font-light text-primary dark:text-primaryDark">{{
+            stack
+          }}</span>
         </p>
-        <div></div>
+        <div class="flex flex-row gap-10 w-full">
+          <div class="flex flex-row gap-[10px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-black dark:text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+              />
+            </svg>
+            <a class="underline font-[16px] text-black dark:text-white" href=""
+              >Live Preview</a
+            >
+          </div>
+          <div class="flex flex-row gap-[10px]">
+            <svg
+              class="w-5 h-5 fill-black dark:fill-white"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+              />
+            </svg>
+            <a class="underline font-[16px] text-black dark:text-white" href=""
+              >View Code</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
-

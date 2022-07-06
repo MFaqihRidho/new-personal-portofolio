@@ -17,7 +17,9 @@ import ProjectCard from "../Molecules/ProjectCard.vue";
       <ProjectCard
         title="Calories Counter"
         desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere odio, amet minus soluta ut quae vel culpa beatae est quis praesentium voluptas incidunt laboriosam ipsa magni mollitia porro saepe doloremque aspernatur ex, aperiam maiores? Vitae rem recusandae neque dolore, nemo libero porro laudantium, molestias a, itaque quam harum quasi nihil!"
-        ><template #image>
+        stack="Vue, Tailwind"
+      >
+        <template #image>
           <img
             class="object-cover w-full h-full"
             src="../../Assets/Images/Project/CaloriesCounter.png"
@@ -25,7 +27,11 @@ import ProjectCard from "../Molecules/ProjectCard.vue";
           /> </template
       ></ProjectCard>
       <ProjectCard
-        ><template #image>
+        title="Anime Finder"
+        desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere odio, amet minus soluta ut quae vel culpa beatae est quis praesentium voluptas incidunt laboriosam ipsa magni mollitia porro saepe doloremque aspernatur ex, aperiam maiores? Vitae rem recusandae neque dolore, nemo libero porro laudantium, molestias a, itaque quam harum quasi nihil!"
+        stack="React, Tailwind"
+      >
+        <template #image>
           <img
             class="object-cover w-full h-full"
             src="../../Assets/Images/Project/AnimeFinder.png"
@@ -33,7 +39,11 @@ import ProjectCard from "../Molecules/ProjectCard.vue";
           /> </template
       ></ProjectCard>
       <ProjectCard
-        ><template #image>
+        title="Movie Finder"
+        desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere odio, amet minus soluta ut quae vel culpa beatae est quis praesentium voluptas incidunt laboriosam ipsa magni mollitia porro saepe doloremque aspernatur ex, aperiam maiores? Vitae rem recusandae neque dolore, nemo libero porro laudantium, molestias a, itaque quam harum quasi nihil!"
+        stack="React, Tailwind"
+      >
+        <template #image>
           <img
             class="object-cover w-full h-full"
             src="../../Assets/Images/Project/MovieFinder.png"

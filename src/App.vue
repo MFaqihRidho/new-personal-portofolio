@@ -5,18 +5,12 @@ import Hero from "./Components/Organism/Hero.vue";
 import About from "./Components/Molecules/About.vue";
 import Skills from "./Components/Organism/Skills.vue";
 import Projects from "./Components/Organism/Projects.vue";
+import Contact from "./Components/Organism/Contact.vue";
 </script>
 
 <template>
   <div
-    class="
-      bg-lightMode
-      selection:bg-leftGradient
-      dark:bg-darkMode
-      flex
-      items-center
-      justify-center
-    "
+    class="bg-lightMode selection:bg-leftGradient dark:bg-darkMode flex items-center justify-center"
   >
     <MainLayout>
       <Navbar />
@@ -24,6 +18,7 @@ import Projects from "./Components/Organism/Projects.vue";
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </MainLayout>
   </div>
 </template>

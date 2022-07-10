@@ -6,6 +6,7 @@ import About from "./Components/Molecules/About.vue";
 import Skills from "./Components/Organism/Skills.vue";
 import Projects from "./Components/Organism/Projects.vue";
 import Contact from "./Components/Organism/Contact.vue";
+import Footer from "./Components/Organism/Footer.vue";
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import Contact from "./Components/Organism/Contact.vue";
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </MainLayout>
   </div>
 </template>

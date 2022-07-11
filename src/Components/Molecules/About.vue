@@ -4,7 +4,10 @@ import Experience from "./Experience.vue";
 
 <template>
   <section id="about" class="flex flex-row items-start gap-9">
-    <div class="flex gap-9 min-h-[200px] flex-col items-center">
+    <div
+      data-aos="fade-right"
+      class="flex gap-9 min-h-[200px] flex-col items-center"
+    >
       <h1 class="text-primary font-bold dark:text-primaryDark text-5xl">
         About Me
       </h1>
@@ -17,7 +20,7 @@ import Experience from "./Experience.vue";
         collaborative company
       </p>
     </div>
-    <div class="flex gap-9 flex-col items-center">
+    <div data-aos="fade-left" class="flex gap-9 flex-col items-center">
       <h1 class="text-primary font-bold dark:text-primaryDark text-5xl">
         Work Experience
       </h1>

@@ -9,11 +9,11 @@ import NavLink from "../Molecules/NavLink.vue";
       <div>
         <img
           class="w-24 h-24"
-          src="../../Assets/Icons/logo-dark.png"
+          src="../../Assets/Icons/logo.png"
           alt="logo-dark"
         />
       </div>
-      <div class="flex gap-12 items-center text-lightContent">
+      <div class="flex gap-12 items-center text-primary dark:text-lightContent">
         <p class="font-DMSans text-lg">mfaqihridhoo@gmail.com</p>
         <SocialMedia />
       </div>

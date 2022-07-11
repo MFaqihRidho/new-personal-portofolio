@@ -1,9 +1,12 @@
 <script setup>
-import Experience from "./Experience.vue";
+import Experience from "../Molecules/Experience.vue";
 </script>
 
 <template>
-  <section id="about" class="flex flex-row items-start gap-9">
+  <section
+    id="about"
+    class="flex flex-col justify-center items-center xl:flex-row xl:justify-between xl:items-start gap-14 xl:gap-9"
+  >
     <div
       data-aos="fade-right"
       class="flex gap-9 min-h-[200px] flex-col items-center"

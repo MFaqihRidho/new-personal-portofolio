@@ -13,7 +13,9 @@ import ProjectCard from "../Molecules/ProjectCard.vue";
       <SectionTitle>Projects</SectionTitle>
       <SectionSubTitle>Things I’ve built so far</SectionSubTitle>
     </div>
-    <div class="grid grid-cols-3 gap-y-16 gap-x-20">
+    <div
+      class="grid justify-center lg:grid-cols-2 items-center xl:grid-cols-3 gap-y-16 gap-x-20"
+    >
       <ProjectCard
         title="Calories Counter"
         desc="calorie counter web app, if you know this web app is similar to myfitnespal for example, and uses nutritionix as a food data api"

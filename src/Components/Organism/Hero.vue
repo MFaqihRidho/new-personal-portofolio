@@ -5,10 +5,13 @@ onMounted(() => {});
 </script>
 
 <template>
-  <section id="hero" class="flex w-full items-center justify-between">
+  <section
+    id="hero"
+    class="flex gap-10 lg:gap-0 lg:flex-row flex-col-reverse w-full items-center justify-between"
+  >
     <h1
       data-aos="zoom-in-right"
-      class="text-[58px] glitch leading-[70px] font-bold text-primary dark:text-primaryDark"
+      class="text-center text-3xl lg:text-start md:text-5xl xl:text-[58px] xl:leading-[70px] font-bold text-primary dark:text-primaryDark"
     >
       Hi 👋, <br />
       My name is<br />
@@ -22,7 +25,7 @@ onMounted(() => {});
 
     <div
       data-aos="zoom-in-left"
-      class="h-[350px] w-[350px] bg-gradient-to-t from-leftGradient to-rightGradient p-2 overflow-hidden rounded-full"
+      class="h-72 w-72 xl:h-[350px] xl:w-[350px] lg:h-[250px] lg:w-[250px] bg-gradient-to-t from-leftGradient to-rightGradient p-2 overflow-hidden rounded-full"
     >
       <img
         class="rounded-full w-full h-full object-cover"

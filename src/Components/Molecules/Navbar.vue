@@ -5,7 +5,11 @@ import NavLink from "./NavLink.vue";
 
 <template>
   <nav class="flex justify-between items-center">
-    <img class="w-24 h-24" src="../../Assets/Icons/logo.png" alt="logo" />
+    <img
+      class="w-24 h-24 logo-navbar"
+      src="../../Assets/Icons/logo.png"
+      alt="logo"
+    />
     <div class="flex gap-12 items-center">
       <NavLink />
       <SocialMedia />

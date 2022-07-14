@@ -7,6 +7,7 @@ import Skills from "./Components/Organism/Skills.vue";
 import Projects from "./Components/Organism/Projects.vue";
 import Contact from "./Components/Organism/Contact.vue";
 import Footer from "./Components/Organism/Footer.vue";
+import Intro from "./Components/Molecules/Intro.vue";
 
 import { onMounted } from "vue";
 import { animate } from "motion";
@@ -27,9 +28,19 @@ const sosmedDelay =
 
 onMounted(() => {
   animate(
+    ".intro",
+    { y: ["0px", -window.innerHeight] },
+    { duration: 2, easing: "ease-in-out" }
+  );
+  animate(
+    ".intro2",
+    { y: ["0px", -window.innerHeight] },
+    { duration: 2, easing: "ease-in-out", delay: 1 }
+  );
+  animate(
     ".logo-navbar",
     { x: ["-30px", "0px"], opacity: [0, 1] },
-    { duration: 0.4, easing: "ease-out" }
+    { duration: 0.5, easing: "ease-out" }
   );
   animate(
     ".home",
@@ -94,6 +105,7 @@ onMounted(() => {
     class="bg-lightMode selection:bg-leftGradient dark:bg-darkMode flex items-center justify-center"
   >
     <MainLayout>
+      <Intro />
       <Navbar />
       <Hero />
       <About />

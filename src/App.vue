@@ -9,6 +9,7 @@ import Contact from "./Components/Organism/Contact.vue";
 import Footer from "./Components/Organism/Footer.vue";
 import Intro from "./Components/Molecules/Intro.vue";
 
+import { useStore } from "vuex";
 import { onMounted } from "vue";
 import { animate } from "motion";
 
@@ -26,6 +27,9 @@ const sosmedDelay =
   contactDuration +
   sosmedDuration;
 
+const store = useStore();
+console.log(store.getters.getHomeDelay);
+
 onMounted(() => {
   animate(
     ".intro",
@@ -40,7 +44,7 @@ onMounted(() => {
   animate(
     ".logo-navbar",
     { x: ["-30px", "0px"], opacity: [0, 1] },
-    { duration: 0.5, easing: "ease-out" }
+    { duration: 0.5, easing: "ease-out", delay: store.getters.getHomeDelay }
   );
   animate(
     ".home",

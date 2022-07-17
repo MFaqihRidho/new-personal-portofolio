@@ -7,10 +7,12 @@ import SectionSubTitle from "../Atoms/SectionSubTitle.vue";
 <template>
   <section
     id="skills"
-    data-aos="zoom-out"
     class="w-full flex justify-center flex-col gap-24 items-center"
   >
-    <div class="flex flex-col justify-center items-center gap-10">
+    <div
+      data-aos="zoom-in"
+      class="flex flex-col justify-center items-center gap-10"
+    >
       <SectionTitle>My Skills</SectionTitle>
       <SectionSubTitle>
         Technologies I’ve been working with recently</SectionSubTitle

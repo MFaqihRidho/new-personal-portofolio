@@ -1,7 +1,36 @@
 <script setup>
 import { onMounted } from "vue";
+import { animate } from "motion";
+import { useStore } from "vuex";
 
-onMounted(() => {});
+const store = useStore();
+
+onMounted(() => {
+  animate(
+    ".heroText",
+    { x: [-200, 0], opacity: [0, 1] },
+    {
+      delay: store.getters.getLogoDelay,
+      duration: store.state.heroTextDuration,
+    }
+  );
+  animate(
+    ".heroName",
+    { x: [-200, 0], opacity: [0, 1] },
+    {
+      delay: store.getters.getLogoDelay + 0.5,
+      duration: store.state.heroTextDuration,
+    }
+  );
+  animate(
+    ".heroImage",
+    { x: [200, 0], opacity: [0, 1] },
+    {
+      delay: store.getters.getLogoDelay + 0.5,
+      duration: store.state.heroTextDuration,
+    }
+  );
+});
 </script>
 
 <template>
@@ -9,23 +38,24 @@ onMounted(() => {});
     id="hero"
     class="flex gap-10 lg:gap-0 lg:flex-row flex-col-reverse w-full items-center justify-between"
   >
-    <h1
-      data-aos="zoom-in-right"
+    <div
       class="text-center text-3xl lg:text-start md:text-5xl xl:text-[58px] xl:leading-[70px] font-bold text-primary dark:text-primaryDark"
     >
-      Hi 👋, <br />
-      My name is<br />
-      <span
-        class="text-transparent bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
-        >Muhammad Faqih Ridho</span
+      <h1 class="heroText">
+        Hi 👋, <br />
+        My name is<br />
+      </h1>
+
+      <h1
+        class="text-transparent heroName bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
       >
-      <br />
-      Front-End Developer
-    </h1>
+        Muhammad Faqih Ridho
+      </h1>
+      <h1 class="heroText">Front-End Developer</h1>
+    </div>
 
     <div
-      data-aos="zoom-in-left"
-      class="h-72 w-72 xl:h-[350px] xl:w-[350px] lg:h-[250px] lg:w-[250px] bg-gradient-to-t from-leftGradient to-rightGradient p-2 overflow-hidden rounded-full"
+      class="h-72 w-72 heroImage xl:h-[350px] xl:w-[350px] lg:h-[250px] lg:w-[250px] bg-gradient-to-t from-leftGradient to-rightGradient p-2 overflow-hidden rounded-full"
     >
       <img
         class="rounded-full w-full h-full object-cover"

@@ -5,7 +5,7 @@ import Experience from "../Molecules/Experience.vue";
 <template>
   <section
     id="about"
-    class="flex flex-col justify-center items-center xl:flex-row xl:justify-between xl:items-start gap-14 xl:gap-9"
+    class="flex flex-col justify-center text-center xl:text-start items-center xl:flex-row xl:justify-between xl:items-start gap-14 xl:gap-9"
   >
     <div
       data-aos="fade-right"
@@ -23,7 +23,11 @@ import Experience from "../Molecules/Experience.vue";
         collaborative company
       </p>
     </div>
-    <div data-aos="fade-left" class="flex gap-9 flex-col items-center">
+    <div
+      data-aos="fade-left"
+      data-aos-delay="4000"
+      class="flex gap-9 flex-col items-center"
+    >
       <h1 class="text-primary font-bold dark:text-primaryDark text-5xl">
         Work Experience
       </h1>

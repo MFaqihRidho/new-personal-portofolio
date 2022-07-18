@@ -35,7 +35,7 @@ onMounted(() => {
 
 <template>
   <section
-    id="hero"
+    id="home"
     class="flex gap-10 lg:gap-0 lg:flex-row flex-col-reverse w-full items-center justify-between"
   >
     <div

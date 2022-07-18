@@ -15,7 +15,7 @@ import NavLink from "../Molecules/NavLink.vue";
       </div>
       <div class="flex gap-12 items-center text-primary dark:text-lightContent">
         <p class="font-DMSans text-lg">mfaqihridhoo@gmail.com</p>
-        <SocialMedia />
+        <SocialMedia class="hidden md:flex" />
       </div>
     </div>
     <div class="w-full h-[1px] dark:bg-primary bg-darkContent"></div>

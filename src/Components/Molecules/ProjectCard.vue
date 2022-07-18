@@ -10,6 +10,7 @@ defineProps({
 
 <template>
   <div
+    data-aos="zoom-out"
     class="w-[385px] max-h-[550px] rounded-[20px] overflow-hidden shadow-cardShadow"
   >
     <div class="w-full h-[240px]">

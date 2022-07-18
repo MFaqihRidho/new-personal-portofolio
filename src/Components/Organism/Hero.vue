@@ -10,7 +10,7 @@ onMounted(() => {
     ".heroText",
     { x: [-200, 0], opacity: [0, 1] },
     {
-      delay: store.getters.getLogoDelay,
+      delay: store.getters.getNavbarDelay,
       duration: store.state.heroTextDuration,
     }
   );
@@ -18,7 +18,7 @@ onMounted(() => {
     ".heroName",
     { x: [-200, 0], opacity: [0, 1] },
     {
-      delay: store.getters.getLogoDelay + 0.5,
+      delay: store.getters.getNavbarDelay + 0.5,
       duration: store.state.heroTextDuration,
     }
   );
@@ -26,7 +26,7 @@ onMounted(() => {
     ".heroImage",
     { x: [200, 0], opacity: [0, 1] },
     {
-      delay: store.getters.getLogoDelay + 0.5,
+      delay: store.getters.getNavbarDelay + 0.5,
       duration: store.state.heroTextDuration,
     }
   );
@@ -39,7 +39,7 @@ onMounted(() => {
     class="flex gap-10 lg:gap-0 lg:flex-row flex-col-reverse w-full items-center justify-between"
   >
     <div
-      class="text-center text-3xl lg:text-start md:text-5xl xl:text-[58px] xl:leading-[70px] font-bold text-primary dark:text-primaryDark"
+      class="text-center leading-9 text-4xl lg:text-start md:text-5xl xl:text-[58px] xl:leading-[70px] font-bold text-primary dark:text-primaryDark"
     >
       <h1 class="heroText">
         Hi 👋, <br />
@@ -49,7 +49,8 @@ onMounted(() => {
       <h1
         class="text-transparent heroName bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
       >
-        Muhammad Faqih Ridho
+        Muhammad <br class="block md:hidden" />
+        Faqih Ridho
       </h1>
       <h1 class="heroText">Front-End Developer</h1>
     </div>

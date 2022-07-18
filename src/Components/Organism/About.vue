@@ -35,8 +35,15 @@ import Experience from "../Molecules/Experience.vue";
         title="Front-End Developer Intern"
         company="KMPlus Consulting"
         location="Remote"
-        date="Apr 2022 - Present"
+        date="Apr 2022 - July 2022"
         contract="Internship"
+      />
+      <Experience
+        title="Junior Front-End Developer"
+        company="Lolipad"
+        location="Bandung"
+        date="July 2022 - Present"
+        contract="Contract"
       />
     </div>
   </section>

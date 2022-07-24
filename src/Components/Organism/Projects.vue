@@ -9,12 +9,15 @@ import ProjectCard from "../Molecules/ProjectCard.vue";
     id="projects"
     class="w-full flex justify-center flex-col gap-24 items-center"
   >
-    <div class="flex flex-col justify-center items-center gap-10">
+    <div
+      data-aos="fade-up"
+      class="flex flex-col justify-center items-center gap-10"
+    >
       <SectionTitle>Projects</SectionTitle>
       <SectionSubTitle>Things I’ve built so far</SectionSubTitle>
     </div>
     <div
-      class="grid justify-center lg:grid-cols-2 items-center xl:grid-cols-3 gap-y-16 gap-x-20"
+      class="grid justify-center md:grid-cols-2 items-center xl:grid-cols-3 gap-y-16 gap-x-20"
     >
       <ProjectCard
         title="Calories Counter"

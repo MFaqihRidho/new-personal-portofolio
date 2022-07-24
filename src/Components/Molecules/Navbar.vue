@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="flex justify-between items-center">
+  <nav id="home" class="flex justify-between items-center">
     <img
       class="w-24 h-24 logo-navbar"
       src="../../Assets/Icons/logo.png"
@@ -41,7 +41,7 @@ onMounted(() => {
     <div class="flex gap-12 navbar items-center">
       <NavLink />
       <SocialMedia class="hidden md:flex" />
-      <button @click="toggle()" class="md:hidden block">
+      <button @click="toggle()" class="lg:hidden block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-10 w-10"
@@ -58,12 +58,12 @@ onMounted(() => {
         </svg>
       </button>
     </div>
-    <MobileNav :open="open" />
+    <MobileNav @link-click="toggle" :open="open" />
     <div
       @click="toggle()"
       :class="`w-full right-0 left-0 h-screen top-0 ${
         open ? 'inline-block' : 'hidden'
-      } fixed md:hidden bg-black opacity-50 z-40`"
+      } fixed lg:hidden bg-black opacity-50 z-40`"
     ></div>
   </nav>
 </template>
@@ -78,7 +78,6 @@ export default {
   methods: {
     toggle() {
       this.open = !this.open;
-      console.log(open);
     },
   },
 };

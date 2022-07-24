@@ -48,7 +48,7 @@ onMounted(() => {
 <template>
   <div class="fixed intro top-0 right-0 left-0 z-40">
     <div
-      class="fixed flex flex-col justify-center items-center intro top-0 right-0 left-0 z-40 w-screen h-screen bg-darkMode"
+      class="fixed flex flex-col justify-center items-center intro top-0 right-0 left-0 z-40 w-screen h-screen bg-lightMode dark:bg-darkMode"
     >
       <p class="text-2xl text-center uppercase textIntro">
         I love convert cool design into code

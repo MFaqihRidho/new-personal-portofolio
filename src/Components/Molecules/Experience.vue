@@ -10,12 +10,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="md:min-w-[704px] w-full md:max-w-[800px] flex flex-col gap-6">
-    <div class="flex flex-col md:flex-row gap-3 md:gap-0 md:justify-between">
+  <div class="md:min-w-[604px] w-full md:max-w-[800px] flex flex-col gap-6">
+    <div
+      class="flex flex-col items-center md:flex-row gap-3 md:gap-0 md:justify-between"
+    >
       <div class="flex flex-col gap-2">
         <h5 class="text-2xl text-start">{{ title }}</h5>
-        <div class="flex items-center gap-10">
-          <div class="flex items-center gap-1">
+        <div class="flex items-center md:justify-start justify-center gap-10">
+          <div class="flex items-center justify-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"

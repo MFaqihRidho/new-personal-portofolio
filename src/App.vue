@@ -8,6 +8,7 @@ import Projects from "./Components/Organism/Projects.vue";
 import Contact from "./Components/Organism/Contact.vue";
 import Footer from "./Components/Organism/Footer.vue";
 import Intro from "./Components/Molecules/Intro.vue";
+import BackToTopButton from "./Components/Atoms/BackToTopButton.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Intro from "./Components/Molecules/Intro.vue";
   >
     <MainLayout>
       <Intro />
+      <BackToTopButton />
       <Navbar />
       <Hero />
       <About />

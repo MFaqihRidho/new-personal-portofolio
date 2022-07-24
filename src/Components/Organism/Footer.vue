@@ -19,7 +19,7 @@ import NavLink from "../Molecules/NavLink.vue";
       </div>
     </div>
     <div class="w-full h-[1px] dark:bg-primary bg-darkContent"></div>
-    <div class="flex h-24 items-center justify-between w-full">
+    <div class="flex h-24 gap-10 items-center justify-between w-full">
       <NavLink />
       <p class="text-lg">
         Designed by

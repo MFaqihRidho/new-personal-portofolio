@@ -14,6 +14,7 @@ module.exports = {
         darkMode: "#191919",
         lightContent: "#A7A7A7",
         darkContent: "#666666",
+        darkCard: "#363636",
         primary: "#42446E",
         primaryDark: "#CCCCCC",
         leftGradient: "#13B0F5",

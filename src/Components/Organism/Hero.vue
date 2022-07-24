@@ -35,7 +35,6 @@ onMounted(() => {
 
 <template>
   <section
-    id="home"
     class="flex gap-10 lg:gap-0 lg:flex-row flex-col-reverse w-full items-center justify-between"
   >
     <div
@@ -47,12 +46,16 @@ onMounted(() => {
       </h1>
 
       <h1
-        class="text-transparent heroName bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
+        class="text-transparent md:block hidden heroName bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
       >
-        Muhammad <br class="block md:hidden" />
-        Faqih Ridho
+        Muhammad Faqih Ridho
       </h1>
-      <h1 class="heroText">Front-End Developer</h1>
+      <h1
+        class="text-transparent block md:hidden heroName bg-clip-text bg-gradient-to-r from-leftGradient to-rightGradient"
+      >
+        M.Faqih Ridho
+      </h1>
+      <h1 class="heroText heroProf">Front-End Developer</h1>
     </div>
 
     <div
@@ -66,7 +69,3 @@ onMounted(() => {
     </div>
   </section>
 </template>
-
-<script>
-export default {};
-</script>

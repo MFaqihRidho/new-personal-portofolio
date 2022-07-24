@@ -64,7 +64,7 @@ onMounted(() => {
       <img
         class="rounded-full w-full h-full object-cover"
         src="../../Assets/Images/Profile.png"
-        alt=""
+        alt="profile"
       />
     </div>
   </section>

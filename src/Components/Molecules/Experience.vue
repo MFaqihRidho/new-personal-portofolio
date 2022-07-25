@@ -15,7 +15,9 @@ defineProps({
       class="flex flex-col items-center md:flex-row gap-3 md:gap-0 md:justify-between"
     >
       <div class="flex flex-col gap-2">
-        <h5 class="text-2xl text-start">{{ title }}</h5>
+        <h5 class="md:text-2xl text-xl text-center md:text-start">
+          {{ title }}
+        </h5>
         <div class="flex items-center md:justify-start justify-center gap-10">
           <div class="flex items-center justify-center gap-1">
             <svg

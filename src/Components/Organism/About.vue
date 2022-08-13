@@ -35,7 +35,7 @@ import SectionTitle from "../Atoms/SectionTitle.vue";
       />
       <Experience
         title="Junior Front-End Developer"
-        company="Lolipad"
+        company="Stealth Startup"
         location="Bandung"
         date="July 2022 - Present"
         contract="Contract"
